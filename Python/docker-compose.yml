@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+  iris:
+    build:
+      context: ../IRIS
+      dockerfile: Dockerfile
+    image: isjdctemplate:nativeapi-iris
+    init: true
+    hostname: nativeapi-iris
+    container_name: nativeapi-iris
+    ports:
+      # webserver/management portal port
+      - "52779:52773"
+      # superserver default port
+      - "1972:1972"
+    environment:
+      TZ: JST-9
+
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: isjdctemplate:nativeapi-jupyter
+    init: true
+    hostname: nativeapi-iris
+    container_name: nativeapi-jupyter
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - TZ=JST-9
+    ports:
+      - "8896:8888"
+    volumes:
+      - ./jupyter-sample:/ISC

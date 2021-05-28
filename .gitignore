@@ -1,0 +1,13 @@
+Python/wheel/*.whl
+Python/jupyter-sample/.ipynb_checkpoints
+Python/jupyter-sample/.ipynb_checkpoints/
+Python/*.jpg
+  
+Node.js/node_modules
+Node.js/node_modules/
+Node.js/package-*.json
+Node.js/IRISModules
+Node.js/intersystems-iris-native
+
+Java/NativeAPI/*.class
+Java/jar/*.jar
