@@ -80,7 +80,7 @@ set ^Relation("Mikasa","Eren")=""
 
 ## 1) テンプレートの処理概要
 
-テンプレートでは、Java / Python / Node.js 用から IRIS 用コンテナへ、キーバリュー形式でのアクセスを行うため、[Native API](https://docs.intersystems.com/irislatestj/csp/docbook/Doc.View.cls?KEY=AFL_dbnative) を使用しています。
+テンプレートでは、Java / Python / Node.js 用から IRIS 用コンテナへ、キーバリュー形式でのアクセスを行うため、Native API を使用しています。
 
 > 各言語で必要な irisnative モジュールを使用するための手順は、言語ごとのサブディレクトリで解説しています。
 
@@ -89,7 +89,7 @@ set ^Relation("Mikasa","Eren")=""
 - [Java](Java/README.md#1-テンプレートの処理概要)
 
 
-## 2) [Native API](https://docs.intersystems.com/irislatestj/csp/docbook/Doc.View.cls?KEY=AFL_dbnative) について
+## 2) Native API について
 
 Native API は、IRIS 内部のネイティブデータ（＝グローバル変数）を直接操作できる API で [Java](https://docs.intersystems.com/irislatestj/csp/docbook/Doc.View.cls?KEY=AFL_dbnative)、[.NET](https://docs.intersystems.com/irislatestj/csp/docbook/Doc.View.cls?KEY=AFL_netnative)、[Python](https://docs.intersystems.com/irislatestj/csp/docbook/Doc.View.cls?KEY=AFL_pynative)、[Node.js](https://docs.intersystems.com/irislatestj/csp/docbook/Doc.View.cls?KEY=AFL_nodenative) からアクセスできます。
 > グローバル変数の操作には、IRIS サーバーサイドプログラミングで使用する [ObjectScript](https://docs.intersystems.com/irislatestj/csp/docbook/Doc.View.cls?KEY=AFL_objectscript) を利用しますが、Native API を利用することで、[ObjectScript](https://docs.intersystems.com/irislatestj/csp/docbook/Doc.View.cls?KEY=AFL_objectscript) を使用せずにお好みの言語からアクセスすることができます。
