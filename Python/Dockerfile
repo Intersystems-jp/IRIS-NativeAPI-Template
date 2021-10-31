@@ -1,4 +1,4 @@
-FROM containers.intersystems.com/intersystems/iris-community:2021.1.0.205.0 as IRIS
+FROM containers.intersystems.com/intersystems/irishealth-community:2021.1.0.215.3 as IRIS
 #FROM jupyter/datascience-notebook:python-3.8.3
 FROM jupyter/minimal-notebook:python-3.8.8
 

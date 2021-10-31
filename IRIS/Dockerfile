@@ -1,5 +1,4 @@
-# 2021.1 preview (As of May 2021)
-ARG IMAGE=containers.intersystems.com/intersystems/iris-community:2021.1.0.205.0
+ARG IMAGE=containers.intersystems.com/intersystems/irishealth-community:2021.1.0.215.3
 FROM $IMAGE
 
 USER root

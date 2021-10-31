@@ -1,4 +1,4 @@
-FROM containers.intersystems.com/intersystems/iris-community:2021.1.0.205.0 as IRIS
+FROM containers.intersystems.com/intersystems/irishealth-community:2021.1.0.215.3 as IRIS
 FROM openjdk:8-jdk-alpine
 
 LABEL maintainer="intersystems japan developer community"
